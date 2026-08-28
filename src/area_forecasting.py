@@ -40,6 +40,14 @@ reports ~ C(area_name)
         + recent7_avg
 """
 
+NO_TREND_FORMULA = """
+reports ~ C(area_name)
+        + C(weekday)
+        + C(month)
+        + C(is_holiday)
+        + recent7_avg
+"""
+
 
 def prepare_area_panel(
     df: pd.DataFrame,
